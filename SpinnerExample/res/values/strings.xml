@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Spinner Example</string>
+    <string name="option_prompt">Choose Category</string>
+
+    <string-array name="option_arrays">
+        <item>Projects</item>
+        <item>Skills</item>
+        <item>Qualifications</item>
+        <item>Contact</item>
+     
+    </string-array>
+
+</resources>
