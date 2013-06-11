@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-public class MyAndroidAppActivity extends Activity {
+public class SpinnerExample extends Activity {
 
 	private Spinner spinner1, spinner2;
 	private Button btnSubmit;
@@ -32,9 +32,10 @@ public class MyAndroidAppActivity extends Activity {
 
 		spinner2 = (Spinner) findViewById(R.id.spinner2);
 		List<String> list = new ArrayList<String>();
-		list.add("list 1");
-		list.add("list 2");
-		list.add("list 3");
+		list.add("Matlab");
+		list.add("Eagle Cad");
+		list.add("Microchip");
+		list.add("STM32F4");
 		ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,list);
 		dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spinner2.setAdapter(dataAdapter);
@@ -59,8 +60,8 @@ public class MyAndroidAppActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 
-				Toast.makeText(MyAndroidAppActivity.this,
-						"OnClickListener : " + 
+				Toast.makeText(SpinnerExample.this,
+						"Options Submitted : " + 
 						"\nSpinner 1 : " + String.valueOf(spinner1.getSelectedItem()) +
 						"\nSpinner 2 : " + String.valueOf(spinner2.getSelectedItem()),
 						Toast.LENGTH_SHORT).show();
